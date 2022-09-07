@@ -42,3 +42,18 @@ function squareSum(numbers) {
 // square each number (multiply by itself)
 // add together
 // return results
+
+
+
+
+// Grasshopper - Function syntax debugging
+
+// Before
+// function main [verb, noun]
+//   return verb + noun
+// }
+
+// After
+function main (verb, noun) {
+    return verb + noun
+  }
