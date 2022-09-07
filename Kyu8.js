@@ -57,3 +57,17 @@ function squareSum(numbers) {
 function main (verb, noun) {
     return verb + noun
   }
+
+
+// Grasshopper - If/else syntax debug
+
+  function checkAlive (health) {
+    console.log (health);
+    if (health <= 0) {
+      return false
+    } 
+    else {
+      return true
+    }
+    
+  }
