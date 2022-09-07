@@ -71,3 +71,24 @@ function main (verb, noun) {
     }
     
   }
+
+
+//   Counting sheep...
+  
+  function countSheeps(arrayOfSheep) {
+    //   console.log(arrayOfSheep)
+      let trueSheep = 0
+      arrayOfSheep.forEach(sheep => {
+        if (sheep) {
+           trueSheep = trueSheep +1;
+          }
+      })
+      return trueSheep;
+      console.log(trueSheep)
+    }
+    
+    // create variable to count true sheep 
+    // forEach to loop through array
+    // if statement to find true sheep
+    // true sheep into new variable
+    // return all true sheep in array
