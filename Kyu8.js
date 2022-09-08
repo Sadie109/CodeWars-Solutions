@@ -92,3 +92,14 @@ function main (verb, noun) {
     // if statement to find true sheep
     // true sheep into new variable
     // return all true sheep in array
+
+
+
+    // Find the smallest integer in the array
+ 
+
+    class SmallestIntegerFinder {
+      findSmallestInt(args) {
+    return Math.min(...args)
+      }
+    }
