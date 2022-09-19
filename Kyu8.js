@@ -24,7 +24,7 @@ function popElement(arr) {
 }
 
 
-
+// ----------------------------------------------------
 //   Square(n) Sum
 
 function squareSum(numbers) {
@@ -45,6 +45,7 @@ function squareSum(numbers) {
 
 
 
+// ------------------------------------------------------
 
 // Grasshopper - Function syntax debugging
 
@@ -54,62 +55,84 @@ function squareSum(numbers) {
 // }
 
 // After
-function main (verb, noun) {
-    return verb + noun
-  }
+function main(verb, noun) {
+  return verb + noun;
+}
 
+
+
+// ------------------------------------------------------
 
 // Grasshopper - If/else syntax debug
 
-  function checkAlive (health) {
-    console.log (health);
-    if (health <= 0) {
-      return false
-    } 
-    else {
-      return true
-    }
-    
+function checkAlive(health) {
+  console.log(health);
+  if (health <= 0) {
+    return false;
+  } else {
+    return true;
   }
+}
+
+
+// ------------------------------------------------------
 
 
 //   Counting sheep...
-  
-  function countSheeps(arrayOfSheep) {
-    //   console.log(arrayOfSheep)
-      let trueSheep = 0
-      arrayOfSheep.forEach(sheep => {
-        if (sheep) {
-           trueSheep = trueSheep +1;
-          }
-      })
-      return trueSheep;
-      console.log(trueSheep)
+
+function countSheeps(arrayOfSheep) {
+  //   console.log(arrayOfSheep)
+  let trueSheep = 0;
+  arrayOfSheep.forEach((sheep) => {
+    if (sheep) {
+      trueSheep = trueSheep + 1;
     }
-    
-    // create variable to count true sheep 
-    // forEach to loop through array
-    // if statement to find true sheep
-    // true sheep into new variable
-    // return all true sheep in array
+  });
+  return trueSheep;
+  console.log(trueSheep);
+}
+
+// create variable to count true sheep
+// forEach to loop through array
+// if statement to find true sheep
+// true sheep into new variable
+// return all true sheep in array
 
 
 
-    // Find the smallest integer in the array
- 
+// ------------------------------------------------------
 
-    class SmallestIntegerFinder {
-      findSmallestInt(args) {
-    return Math.min(...args)
-      }
-    }
+// Find the smallest integer in the array
+
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return Math.min(...args);
+  }
+}
+
+
+
+// ------------------------------------------------------
+
+// Century From Year
+
+function century(year) {
+  return Math.ceil(year / 100); //using ceiling method to round up to nearest century (100)
+}
 
 
 
 
-    // Century From Year
-    
+// ------------------------------------------------------
 
-    function century(year) {
-      return Math.ceil(year/100); //using ceiling method to round up to nearest century (100)
-    }
+// Is n divisible by x and y?
+
+function isDivisible(n, x, y) {
+  if (n % x == 0 && n % y == 0) {
+    return true;
+  }
+  return false;
+}
+
+// use if statement to check if n could be divisible by x and divisible by y
+// return appropriate answer ie. true/false
