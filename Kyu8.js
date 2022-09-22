@@ -23,7 +23,6 @@ function popElement(arr) {
   return arr;
 }
 
-
 // ----------------------------------------------------
 //   Square(n) Sum
 
@@ -43,8 +42,6 @@ function squareSum(numbers) {
 // add together
 // return results
 
-
-
 // ------------------------------------------------------
 
 // Grasshopper - Function syntax debugging
@@ -59,8 +56,6 @@ function main(verb, noun) {
   return verb + noun;
 }
 
-
-
 // ------------------------------------------------------
 
 // Grasshopper - If/else syntax debug
@@ -74,9 +69,7 @@ function checkAlive(health) {
   }
 }
 
-
 // ------------------------------------------------------
-
 
 //   Counting sheep...
 
@@ -98,8 +91,6 @@ function countSheeps(arrayOfSheep) {
 // true sheep into new variable
 // return all true sheep in array
 
-
-
 // ------------------------------------------------------
 
 // Find the smallest integer in the array
@@ -110,8 +101,6 @@ class SmallestIntegerFinder {
   }
 }
 
-
-
 // ------------------------------------------------------
 
 // Century From Year
@@ -119,9 +108,6 @@ class SmallestIntegerFinder {
 function century(year) {
   return Math.ceil(year / 100); //using ceiling method to round up to nearest century (100)
 }
-
-
-
 
 // ------------------------------------------------------
 
@@ -136,3 +122,22 @@ function isDivisible(n, x, y) {
 
 // use if statement to check if n could be divisible by x and divisible by y
 // return appropriate answer ie. true/false
+
+// ------------------------------------------------------------
+
+// Abbreviate a Two Word Name
+
+// first attempt at the solution, worked for first name but not second
+function abbrevName(name) {
+  let first = name.slice(0, 1);
+  let last = name.slice(4, 5);
+  let result = first + "." + last;
+  return result;
+
+  console.log(result);
+}
+
+// take the first letter of the first and last name:
+// slice the string
+// put the first initial and last initial together
+// add a space inbetween first and last initial
