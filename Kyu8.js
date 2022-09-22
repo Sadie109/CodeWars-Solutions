@@ -141,3 +141,10 @@ function abbrevName(name) {
 // slice the string
 // put the first initial and last initial together
 // add a space inbetween first and last initial
+
+
+  
+function abbrevName(name){
+  let nameO = name.split(' ');
+  return nameO[0].charAt(0).toUpperCase()+'.' + nameO[1].charAt(0).toUpperCase();
+}
