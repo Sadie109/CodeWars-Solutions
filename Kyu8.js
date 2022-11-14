@@ -148,3 +148,15 @@ function abbrevName(name){
   let nameO = name.split(' ');
   return nameO[0].charAt(0).toUpperCase()+'.' + nameO[1].charAt(0).toUpperCase();
 }
+
+
+
+// Basic Mathematical Operations
+
+
+const basicOp = (operation, value1, value2) =>
+
+operation == '+' ? value1 + value2 :
+operation == '-' ? value1 - value2 :
+operation == '*' ? value1 * value2 :
+                   value1 / value2 
