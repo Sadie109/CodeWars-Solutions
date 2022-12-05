@@ -142,21 +142,31 @@ function abbrevName(name) {
 // put the first initial and last initial together
 // add a space inbetween first and last initial
 
-
-  
-function abbrevName(name){
-  let nameO = name.split(' ');
-  return nameO[0].charAt(0).toUpperCase()+'.' + nameO[1].charAt(0).toUpperCase();
+function abbrevName(name) {
+  let nameO = name.split(" ");
+  return (
+    nameO[0].charAt(0).toUpperCase() + "." + nameO[1].charAt(0).toUpperCase()
+  );
 }
-
-
 
 // Basic Mathematical Operations
 
-
 const basicOp = (operation, value1, value2) =>
+  operation == "+"
+    ? value1 + value2
+    : operation == "-"
+    ? value1 - value2
+    : operation == "*"
+    ? value1 * value2
+    : value1 / value2;
 
-operation == '+' ? value1 + value2 :
-operation == '-' ? value1 - value2 :
-operation == '*' ? value1 * value2 :
-                   value1 / value2 
+
+
+    // Keep Hydrated
+
+function litres(time) {
+  return Math.floor(time * 0.5);
+}
+
+// take time variable and times it by 0.5
+// want to take the outcome and round down to smallest value using Math.floor()
