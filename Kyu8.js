@@ -170,3 +170,17 @@ function litres(time) {
 
 // take time variable and times it by 0.5
 // want to take the outcome and round down to smallest value using Math.floor()
+
+
+
+
+// Convert number to reversed array of digits
+
+function digitize(n) {
+  return n.toString(10).split('').map(Number).reverse();
+ }
+ 
+ // turn n (numbers) into a string using toString() method
+ // split the numbers up using split()method
+ // add the numbers into an array using map()method
+ // lastly reverse the order in which the numbers are shown using reverse() method
